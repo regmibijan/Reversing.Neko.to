@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/lyt_parent" android:layout_width="fill_parent" android:layout_height="0.0sp" app:layout_constraintDimensionRatio="H,1:1.1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@id/imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_eg" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                <View android:background="@drawable/bg_product1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,1:1.1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <ImageView android:id="@id/imageview2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/product_eg" android:scaleType="centerCrop" android:adjustViewBounds="true" android:scaleY="-1.0" />
+                    <View android:background="@drawable/bg_product2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:scaleY="-1.0" />
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,1:0.95" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="30.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.github.mmin18.widget.RealtimeBlurView android:layout_width="fill_parent" android:layout_height="1200.0dip" app:realtimeBlurRadius="10.0dip" app:realtimeOverlayColor="#658a8e97" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+                            <ImageView android:id="@id/arrow_left" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/arrow_left" android:alpha="0.6" />
+                            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/arrow_right" android:layout_toRightOf="@id/arrow_left" android:alpha="0.6" />
+                        </RelativeLayout>
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="Naruto Jiraya Men white T-Shirt" android:fontFamily="@font/lineto" android:letterSpacing="0.05" />
+                        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/grey_40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="~ $ 7.38" android:fontFamily="@font/lineto" android:letterSpacing="0.05" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/grey_20" android:background="@drawable/chip_unselected_news_2" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="20.0dip" android:text="32 pieces left" android:fontFamily="@font/lineto" android:letterSpacing="0.05" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:background="@drawable/chip_selected_news_2" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="Buy Now" android:fontFamily="@font/lineto" android:backgroundTint="@color/white" android:letterSpacing="0.07" />
+                        <TextView android:textSize="13.0dip" android:textColor="@color/grey_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="The iconic printed T-shirt of the season title The graphic is designed by Ryohei Kaneda. The soft and firm cotton fabric has a large silhouette so you can wear it comfortably. The balance between the clean collar and the long sleeves is a commitment that does not look loose. There is also an emblem in the shape of a printed motif on the left cuff." android:fontFamily="@font/lineto" android:letterSpacing="0.05" />
+                        <LinearLayout android:orientation="horizontal" android:background="@drawable/chip_selected_news_2" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:backgroundTint="#866b6f7c">
+                            <androidx.cardview.widget.CardView android:layout_gravity="top" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip">
+                                <ImageView android:id="@id/user_iv" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/zoro" android:scaleType="centerCrop" />
+                            </androidx.cardview.widget.CardView>
+                            <com.rengwuxian.materialedittext.MaterialEditText android:theme="@style/input" android:textSize="14.0dip" android:id="@id/et_comment" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="Add a comment.." android:maxLines="7" android:layout_weight="8.1" android:inputType="textMultiLine" app:met_baseColor="#ff151820" app:met_errorColor="@color/nav_red" app:met_floatingLabel="none" app:met_primaryColor="#00151820" app:met_textColor="#ffabb6d5" app:met_textColorHint="#ff61687c" app:met_underlineColor="#00151820" style="@style/input" />
+                            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/btn_comment" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="37.0dip" android:layout_marginBottom="3.0dip" android:text="Post" android:textAllCaps="false" android:fontFamily="@font/lineto" android:letterSpacing="0.1" app:spinning_bar_color="@color/white" app:spinning_bar_padding="9.0dip" app:spinning_bar_width="2.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

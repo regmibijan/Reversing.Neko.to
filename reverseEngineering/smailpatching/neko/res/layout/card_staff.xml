@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lyt_parent" android:layout_width="73.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="70.0dip" android:layout_height="70.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="28.0dip" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/profile_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <View android:background="@drawable/bg_poster_details" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.5" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="11.0dip" android:textColor="@color/grey_20" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="2" android:fontFamily="@font/roobert_light" android:letterSpacing="0.05" />
+</LinearLayout>

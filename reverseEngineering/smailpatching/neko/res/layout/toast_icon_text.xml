@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="#f5424249" app:cardCornerRadius="13.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="14.0dip" android:paddingTop="8.0dip" android:paddingRight="14.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/logo" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/nekkoto_logo" android:adjustViewBounds="true" />
+        <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:fontFamily="@font/roobert_light" android:letterSpacing="0.07" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

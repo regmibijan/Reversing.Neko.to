@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" android:elevation="2.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="20.0dip" app:cardElevation="2.0dip">
+        <ImageView android:id="@id/user_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/zoro" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:elevation="1.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="15.0dip" app:cardElevation="1.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/b1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="right" android:background="@drawable/chip_unselected" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="THEME NAME" android:textAllCaps="true" android:fontFamily="@font/lineto" android:letterSpacing="0.1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="120.0dip">
+                <View android:id="@id/t1" android:background="#ff9c9090" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <View android:id="@id/accent" android:background="#ff971f40" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <View android:id="@id/t3" android:background="#ff176040" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <View android:id="@id/b2" android:background="#ff120270" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

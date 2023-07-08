@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="app.nekko.to" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="app.nekko.to.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="app.nekko.to.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="app.nekko.to.utils.MyAppClass" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:name="app.nekko.to.WebViewActivity" android:screenOrientation="fullSensor" android:theme="@style/FullscreenTheme"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3940256099942544~3347511713"/>
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE"/>
+        <activity android:name="app.nekko.to.TermsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+        <activity android:name="app.nekko.to.NotifHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialo"/>
+        <activity android:name="app.nekko.to.SelectAnimeRoomActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialo"/>
+        <activity android:name="app.nekko.to.ForgotPasswordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+        <activity android:name="app.nekko.to.PrivacyPolicyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialog.Alert"/>
+        <activity android:configChanges="keyboardHidden" android:name="app.nekko.to.CharDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.AllReviewsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.ProductActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.ReportUserActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.PfpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.UserActivityActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.RoomDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open.nekkoto.app" android:path="/room" android:scheme="http"/>
+                <data android:host="open.nekkoto.app" android:path="/room" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="app.nekko.to.ReportCommentsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.EditCommentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.CommentsNewsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.SocialAccountsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="app.nekko.to.SearchUserActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.UsernameActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialo"/>
+        <activity android:name="app.nekko.to.PfpChooseActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialo"/>
+        <activity android:name="app.nekko.to.ThemesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.NewAnnouncementActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.ImportActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.RequestAnimeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.InviteActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.AnnouncementActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.BannedActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.NotVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.DonarsListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.AdvanceSearchActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="app.nekko.to.CommentsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.ReviewsAllActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.RequestAllActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.EditReviewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.NotificationsHostActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.NotificationDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.ReviewDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.ReplyNewsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="app.nekko.to.ReplyActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open.nekkoto.app" android:path="/comment" android:scheme="http"/>
+                <data android:host="open.nekkoto.app" android:path="/comment" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="app.nekko.to.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.UserTagUrlActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open.nekkoto.app" android:path="/user" android:scheme="http"/>
+                <data android:host="open.nekkoto.app" android:path="/user" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="app.nekko.to.WatchingListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.CommentsFeedHostActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.UserSettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.AnnNewsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open.nekkoto.app" android:path="/news" android:scheme="http"/>
+                <data android:host="open.nekkoto.app" android:path="/news" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="app.nekko.to.ProductsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.NotidicationsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.PassResetActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.WeekdayTabHost" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.SignUpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.RoomCreateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleInstance" android:name="app.nekko.to.RoomPlayerActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="app.nekko.to.PostReviewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="app.nekko.to.VerifySignupActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name="app.nekko.to.EditProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="app.nekko.to.LoginActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="app.nekko.to.DetailsActivity" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="app.nekko.to.DetailsActivity2" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="app.nekko.to.MalUrlActivity" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="myanimelist.net" android:scheme="http"/>
+                <data android:host="myanimelist.net" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="app.nekko.to.NekkotoUrlActivity" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open.nekkoto.app" android:path="/anime" android:scheme="http"/>
+                <data android:host="open.nekkoto.app" android:path="/anime" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="app.nekko.to.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Nobar" android:windowSoftInputMode="adjustPan">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="view.nekkoto.app" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="app.nekko.to.SplashscreenActivity" android:theme="@style/AppTheme.Nobar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_item_show" android:name="app.nekko.to.ItemMovieActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.mradzinski.caster.CastOptionsProvider"/>
+        <activity android:name="com.mradzinski.caster.ExpandedControlsActivity" android:theme="@style/Theme.CastVideosDark"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <meta-data android:name="onesignal_app_id" android:value="6b936661-ce94-4afe-a644-3d770a48134b"/>
+        <meta-data android:name="onesignal_google_project_number" android:value="str:REMOTE"/>
+        <receiver android:name="com.onesignal.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="app.nekko.to"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.NotificationOpenedReceiver"/>
+        <service android:name="com.onesignal.GcmIntentService"/>
+        <service android:name="com.onesignal.GcmIntentJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.onesignal.RestoreJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.onesignal.RestoreKickoffJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.onesignal.SyncService" android:stopWithTask="true"/>
+        <service android:name="com.onesignal.SyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.onesignal.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.onesignal.NotificationRestoreService"/>
+        <receiver android:name="com.onesignal.BootUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="app.nekko.to.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="app.nekko.to.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="app.nekko.to.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+    </application>
+</manifest>

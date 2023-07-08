@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/chip_bg_alert_watchlist" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Add to Watchlist" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.1" />
+    </LinearLayout>
+    <View android:background="#43ffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:mrl_rippleColor="#ff23ff74" app:mrl_rippleRoundedCorners="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/watching_lyt" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:padding="2.5dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/youtube" android:scaleType="centerCrop" app:tint="#ff23ff74" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff23ff74" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Watching" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.1" />
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:mrl_rippleColor="#ff20c9fd" app:mrl_rippleRoundedCorners="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/completed_lyt" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:padding="2.5dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_completed" android:scaleType="centerCrop" app:tint="#ff20c9fd" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff20c9fd" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Completed" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.1" />
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/list_considering" app:mrl_rippleRoundedCorners="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/considering_lyt" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:padding="2.5dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_considering" android:scaleType="centerCrop" app:tint="@color/list_considering" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/list_considering" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Considering" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.1" />
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/list_hold" app:mrl_rippleRoundedCorners="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/hold_lyt" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:padding="2.6999817dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/pausebt" android:scaleType="centerCrop" app:tint="@color/list_hold" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/list_hold" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="On Hold" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.1" />
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:mrl_rippleColor="#ffff194d" app:mrl_rippleRoundedCorners="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/dropped_lyt" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:padding="2.5dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_dropped" android:scaleType="centerCrop" app:tint="#ffff194d" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffff194d" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Dropped" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.1" />
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/lyt_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_marginBottom="22.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@id/heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:lineSpacingExtra="6.0dip" android:fontFamily="@font/roobert_heavy" android:letterSpacing="0.08" />
+        <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/content" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+        <LinearLayout android:orientation="vertical" android:id="@id/bullet_lyt" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_1" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_2" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_3" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_4" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_5" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_6" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_7" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_8" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_9" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_9" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bt_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+                <View android:background="@color/white" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="7.0dip" />
+                <TextView android:textSize="12.5dip" android:textColor="@color/grey_20" android:id="@id/bt_text_10" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ywfad uyxyuaf xuyqfuxy fyu" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.085" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

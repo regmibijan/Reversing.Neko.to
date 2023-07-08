@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/btn_nav_home" android:enabled="true" android:id="@id/tab1" android:title="" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/tab_2" android:enabled="true" android:id="@id/tab2" android:title="" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/search" android:enabled="true" android:id="@id/tab2_5" android:title="" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/tab_4" android:enabled="true" android:id="@id/tab4" android:title="" app:showAsAction="ifRoom" />
+</menu>

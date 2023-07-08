@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/color_bg_news" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="19.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Verification of identity" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.07" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/grey_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="An e-mail has been sent with the URL for verifying your Nekkoto ID." android:fontFamily="@font/roobert_medium" android:letterSpacing="0.07" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/grey_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="It may take some time for the e-mail to arrive. Make sure to check e-mail from Nekkoto isn't being filtered as spam." android:fontFamily="@font/roobert_light" android:letterSpacing="0.07" />
+        <View android:layout_gravity="center" android:layout_width="90.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/signin" android:background="@drawable/chip_unselected_news" android:paddingLeft="17.0dip" android:paddingTop="5.0dip" android:paddingRight="17.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Log in" android:fontFamily="@font/lineto" android:letterSpacing="0.07" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/discord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+            <Button android:background="@drawable/discord" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="DISCORD" android:fontFamily="@font/lineto" style="@style/TextAppearance.Medium.Bold" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/telegram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <Button android:background="@drawable/icon_tele" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="TELEGRAM" android:fontFamily="@font/lineto" style="@style/TextAppearance.Medium.Bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="40.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="20.0dip" android:text="NEKKOTO" android:layout_above="@id/card" android:fontFamily="@font/got" />
+</RelativeLayout>

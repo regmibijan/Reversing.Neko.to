@@ -1,0 +1,74 @@
+# FORMAT: [endpoint, ...params]
+
+# USER_ADD_ANIME_TO_LIST
+['addConsidering', 'token', 'videos_id'],
+['addDropped', 'token', 'videos_id'],
+['addOnHold', 'token', 'videos_id'],
+['addWatched', 'token', 'videos_id'],
+['addWatching', 'token', 'videos_id'],
+['addLastWatched', 'token', 'vid', 'eid'],
+
+# USER_GET_ANIME_LIST
+['getConsidering', 'token'],
+['getDropped', 'token'],
+['getOnHold', 'token'],
+['getWatched', 'token'],
+['getWatching', 'token'],
+['lastWatched', 'token'],
+
+# USER_SYNC
+['anisync', 'token'],
+['malsync', 'token'],
+['getSync', 'token'],
+
+# USER_INVITES
+['createInvite', 'token'],
+['getInvites', 'token'],
+
+# USER_INFO
+['getHomeUser', 'token'],
+['getUser', 'token', 'id'],
+['getReviewsByUser', 'token', 'amount'],
+['getUserRecommendations', 'token'],
+['socialAccounts', 'token'],
+
+# Search
+['getAdvancedSearch', 'token'],
+
+# ANIME INFO
+['getAnimeByGenre', 'token', 'id'],
+['getAnimeChars', 'token', 'anime_id'],
+['getAnimeInfo', 'token', 'id'],
+['getBaseAnimeInfo', 'token', 'id'],
+['getRecentActionsForAnime', 'token', 'anime_id'],
+['getRecentAnimeActions', 'token', 'page', 'token'],
+['getRelatedAnime', 'anime_id', 'token'],
+['getReviewsOfAnime', 'token', 'anime_id'],
+['miscAnimeInfoForUser', 'token', 'id'],
+['getTitlesForAnime', 'token', 'anime_id'],
+
+# EPISODE INFO
+['getCommentsEpisode', 'id', 'eid', 'page', 'token'],
+['getEpsForAnimeV3', 'token', 'id'],
+['getRecentCommentsFeed', 'token', 'page'],
+
+# HOMEPAGE
+['getHomePoster', 'token'],
+['getLastAired', 'token'],
+['getNotifsCount', 'token'],
+['getProductDetails', 'token'],
+['getRecents', 'token'],
+['getUpToday', 'token'],
+['getWeeklyTop', 'token'],
+['makeRecs', 'token'],
+['getAppAnnouncement', 'token'],
+
+# DONATIONS
+['getAllDonors', 'token'],
+['getDonationProgress', 'token'],
+['getTop4Donors', 'token'],
+['topDonor', 'token']
+
+# MISC
+['faq', 'token'],
+['getRules', 'token'],

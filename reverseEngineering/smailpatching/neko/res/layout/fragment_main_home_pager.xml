@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+        <com.google.android.material.tabs.TabLayout android:id="@id/result_tabs" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:elevation="0.0dip" app:tabRippleColor="@color/transparent" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_below="@id/top_wish_forest" android:nestedScrollingEnabled="false" android:elevation="0.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/bottom_nav_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="20.0dip">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_centerHorizontal="true" app:cardBackgroundColor="#ad000000" app:cardCornerRadius="25.0dip" app:cardElevation="0.0dip">
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:layout_gravity="center" android:id="@id/home" android:background="?selectableItemBackgroundBorderless" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:scaleType="centerInside" android:tint="@color/white" android:layout_weight="1.0" app:srcCompat="@drawable/btn_nav_home" />
+                    <ImageButton android:layout_gravity="center" android:id="@id/favorite" android:background="@color/transparent" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="45.0dip" android:layout_height="45.0dip" android:scaleType="centerInside" android:tint="@color/white" android:layout_weight="1.0" app:srcCompat="@drawable/btn_nav_movie" />
+                    <ImageButton android:layout_gravity="center" android:id="@id/movies" android:background="?selectableItemBackgroundBorderless" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="45.0dip" android:layout_height="45.0dip" android:scaleType="centerInside" android:tint="@color/white" android:layout_weight="1.0" app:srcCompat="@drawable/search" />
+                    <ImageButton android:layout_gravity="center" android:id="@id/settings" android:background="?selectableItemBackgroundBorderless" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="15.0dip" android:scaleType="centerInside" android:tint="@color/white" android:layout_weight="1.0" app:srcCompat="@drawable/other" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/live_tv" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@android:color/white" app:elevation="0.0dip" app:fabSize="normal" app:srcCompat="@drawable/outline_settings_24" />
+</RelativeLayout>

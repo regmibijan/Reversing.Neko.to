@@ -1,0 +1,79 @@
+<html> 
+<head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width,initial-scale=1">
+                <meta name="theme-color" content="#15081E">
+                <link rel="stylesheet" href="bootstrap.min.css">
+                <script src="jquery.js"></script>
+                <script src="all.min.js"></script>
+                <link href="all.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        </head>
+    <title>Donation links</title>
+<body>
+    <label id="lblGreetings"></label>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    #heading{
+        font-family: 'Raleway';
+    }
+    body, h1,h3,h4,h5,h6 {font-family: 'Nunito';}
+    body{
+        scroll-behavior: smooth;
+        font-size: 18px;
+		width: 100%;
+        height: auto;
+        background-color: #15081E;
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+    
+    #fade{
+        user-select: none; /* supported by Chrome and Opera */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        opacity: 1;
+        animation-name: fading;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    @keyframes slidefromright {
+        from{right:-100px}to{right:20px;}
+    }
+    @keyframes fading {
+        from{opacity:0;}to{opacity:1;}
+    }
+    @keyframes salmonwhite {
+        0%{color:white;}50%{color:salmon;}100%{color:white;}
+    }
+    @keyframes bordercolors{
+        0%{border-color:lightsalmon}50%{border-color: red}100%{border-color: lightsalmon}
+    }
+</style>
+<script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    if (hrs < 12)
+        document.write("<img src='morning.gif'>")
+		
+    else if (hrs >= 12 && hrs <= 17)
+        document.write("<img src='noon.gif'>")
+		
+    else if (hrs >= 17 && hrs <= 20)
+        document.write("<img src='evening.gif'>")
+
+	else if (hrs >= 20 && hrs <= 24)
+        document.write("<img src='night.gif'>")
+
+  
+</script> 
+</html>

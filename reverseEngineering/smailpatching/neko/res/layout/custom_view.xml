@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progressBar" android:paddingTop="1.0dip" android:layout_width="14.0dip" android:layout_height="110.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:progressDrawable="@drawable/custom_bar" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:id="@id/textView" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_alignLeft="@id/progressBar" android:layout_marginStart="11.0dip" android:layout_alignStart="@id/progressBar" />
+    <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:id="@id/textView2" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:text="78%" android:layout_below="@id/textView" android:layout_alignLeft="@id/textView" android:layout_marginStart="60.0dip" android:layout_alignStart="@id/textView" />
+</RelativeLayout>

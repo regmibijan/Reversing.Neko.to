@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <View android:id="@id/background_view" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_below="@id/app_bar_layout" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/spacing_mlarge" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginTop="50.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/logo" />
+        <androidx.cardview.widget.CardView android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_middle" app:cardCornerRadius="6.0dip" app:cardElevation="5.0dip">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/spacing_mlarge" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_middle" android:layout_marginBottom="@dimen/spacing_xlarge" android:text="@string/reset" android:textAllCaps="true" />
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <AutoCompleteTextView android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email" android:maxLines="1" android:singleLine="true" android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_mlarge" />
+                <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/reset_pass" android:background="@drawable/btn_rounded_primary" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="-4.0dip" android:layout_marginRight="-4.0dip" android:text="@string/signin" android:textAllCaps="true" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_large" />
+    </LinearLayout>
+</RelativeLayout>

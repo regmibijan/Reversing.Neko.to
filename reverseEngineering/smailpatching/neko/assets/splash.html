@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Random Text</title>
+<script data-ad-client="ca-pub-2402803579538084" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+var textarray = [
+
+
+"-The world isn't perfect. But it's there for us, doing the best it can....that's what makes it so damn beautiful. ~ Roy Mustang (Full Metal Alchemist)",
+"-Fear is not evil. It tells you what weakness is. And once you know your weakness, you can become stronger as well as kinder. ~Gildarts Clive (Fairy Tail)",
+"-To know sorrow is not terrifying. What is terrifying is to know you can't go back to happiness you could have. ~ Matsumoto Rangiku (Bleach)",
+"-Whatever you lose, you'll find it again. But what you throw away you'll never get back. ~ Kenshin Himura (Rurouni Kenshin: Meiji Kenkaku Romantan)",
+"-People, who can’t throw something important away, can never hope to change anything. ~ Armin Arlert (Shingeki no Kyojin / Attack on Titan) ",
+"-I want you to be happy. I want you to laugh a lot. I don’t know what exactly I’ll be able to do for you, but I’ll always be by your side. ~ Kagome (InuYasha)" ,
+"-Thinking you’re no-good and worthless is the worst thing you can do ~ Nobita (Doraemon)",
+"-Don’t give up, there’s no shame in falling down! True shame is to not stand up again! ~ Shintaro Midorima (Kuroko No Basket)",
+"-When a man learns to love, he must bear the risk of hatred. ~ Uchiha Madara",
+"-Just be yourself and you'll be fine ~ Natsuki Takaya, (Fruits Basket)",
+"-Lying tears hurt others. Lying smiles hurt oneself ~ Ichirou Ohkouchi",
+"-Power isn’t determined by your size, But the size of your heart and dreams! ~ Monkey D. Luffy (One Piece)",
+"-Dont let Nothing stop you. Fight for your goals even when it seems out of reach. ~ Ichigo Kurosaki (Bleach)",
+"-Whatever happens, happens. ~ Keiko Nobumoto",
+"-Spoiling stories… is an unforgivable sin in this world. ~ Leo Baskerville Pandora Hearts",
+"-There are things that cannot be taken back. But the world will keep on spinning whether you laugh or you cry. ~ Hikigaya Hachiman",
+"-Once you question your own belief, it's over. ~ Naruto Uzumaki",
+"-In order to exist you need a purpose, to exist without a purpose is the same as being dead. ~ Gaara",
+"-The true substance of love lies in the act of howling words of love with a desperation of a man jumping into the high seas. ~ Osamu Dazai, A New Hamlet",
+"-I'll go, then rub it in the faces of everyone who said I couldn't. ~ Atsuko Ishizuka (a place further than the universe)",
+"-When you hit the point of no return, that’s the moment it truly becomes a journey. If you can still turn back, it’s not really a journey. ~ Atsuko Ishizuka (a place further than the universe)",
+"-Never think the stars you see are all the stars there are. ~ Atsuko Ishizuka (a place further than the universe)",
+"-Whether you’re sad, you’re a mess, or you’ve hit rock bottom, you still have TO PLAY! That’s how people like us survive ~ Kaori Miyazono",
+"-Talent is something you bloom, Instinct is something you polish. ~ Oikawa Tooru, Haikyūu",
+"-I don't care if no one like me, I wasn't created in this world to entertain everyone. ~ Oreki from Hyouka",
+"-People are born weak, but we have the freedom to defy our weaknesses and struggle to change ourselves ~ Yoshida Shouyou",
+"-I dont exist. But even if I do thats still none of your business ~ Mei Misaki",
+"-If you don't want a sarcastic answer, don't ask a stupid question. ~ Oreki Houtarou",
+"-Don't change so people will like you. Be yourself and the right people will like the real you. ~ Oreki Houtarou",
+"-There are only two paths you can choose. You can sit quietly and be selected out of this world, or you can adapt and change! ~ Gai Tsutsugami",
+"-Hero? No! We're pirates! I love heroes but I don't wanna be one! Do you know what heroes are? Say there is a chunk of meat. Pirates will have a banquet and eat it but heroes will share it with other people. I want all the meat! ~ Monkey D.Luffy",
+"-Once I’m dead, I won’t even be able to remember you. So I’ll win, no matter what. I’ll live, no matter what! ~ Mikasa Ackerman",
+"-Appearances rarely share the whole truth ~ Selim Bradly Pride",
+"-You can spill drinks on me, even spit on me. I'll just laugh about it. But If you dare to hurt my friends... I won't forgive you! ~ Shanks",
+"-When the world shoves you around, you just gotta stand up and shove back. It's not like somebody's gonna save you if you start babbling excuses. ~ Roronoa Zoro",
+"-I don't wanna live a thousand years. If I just live through today, that'll be enough. ~ Portgas D. Ace",
+"-In case we become candles, I want to have a nice pose ~ Roronoa Zoro",
+"-I'm sorry. I never pray to god. ~ Roronoa Zoro",
+"-Give a kid a smoke and he’ll be happy for a day. Teach him how to smoke… he’ll be happy for his whole shortened life. ~ Eikichi Onizuka",
+"-Sometimes violence is the only way to get the message across. ~ Eikichi Onizuka",
+"-A brat who is afraid to be hurt isn’t qualified to love someone. ~ Eikichi Onizuka",
+"-There’s no gender distinction among the bad. ~ Eikichi Onizuka",
+"-Some lies are necessary for giving children dreams. ~ Shimura Tae (Gintama)",
+"-I suppose it’s not so bad that an old friend is the same as ever. ~ Kotarou Katsura (Gintama)",
+"-Whether doing good or evil, I will be the boss. ~ Kagura (Gintama)",
+"-No matter whether you win or not, there’s no meaning to war. ~ Gintoki Sakata (Gintama)",
+"-You yourself have to change first, or nothing will change for you. ~ Gintoki Sakata (Gintama)",
+"-Life is like a mountain – you can say you’ve reached the top, but only after climbing back down. ~ Gintoki Sakata (Gintama)"
+
+];
+
+function RndText() {
+var rannum= Math.floor(Math.random()*textarray.length);
+document.getElementById('ShowText').innerHTML=textarray[rannum];
+}
+onload = function() { RndText(); }
+
+var inter = setInterval(function() { RndText(); }, 4500);
+
+</script>
+<style>
+    body, h2,h3,h4,h5,h6 {font-family: 'Nunito';}
+    body{
+	  scroll-behavior: smooth;
+        color: white;
+        text-align: center;
+        background-color: #15081E;
+    }
+	
+	@font-face {
+  font-family: myFirstFont;
+  src: url('lineto.ttf')  format('truetype');
+}
+
+div {
+    font-family: myFirstFont;
+}
+   
+</style>
+</head>
+<body>
+<div id="ShowText"></div>
+</body>
+
+</html>

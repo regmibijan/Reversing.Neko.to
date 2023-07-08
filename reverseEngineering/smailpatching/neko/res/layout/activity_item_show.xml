@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/color_bg_news" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" android:elevation="3.0dip">
+        <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.github.ybq.android.spinkit.SpinKitView android:layout_gravity="center" android:padding="5.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:indeterminate="true" style="@style/SpinKitView.MultiplePulseRing" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/grey_20" android:gravity="center" android:layout_gravity="center" android:id="@id/quotee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="30.0dip" android:lineSpacingExtra="8.0dip" android:fontFamily="@font/roobert_light" android:letterSpacing="0.09" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingTop="31.0dip" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="true" />
+    </RelativeLayout>
+</RelativeLayout>

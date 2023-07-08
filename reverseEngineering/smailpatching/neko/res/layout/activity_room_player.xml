@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff121213" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/halfscreen" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/play" android:background="#ff121213" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="250.0sp" android:weightSum="5.0">
+            <FrameLayout android:id="@id/player_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.5">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:controller_layout_id="@layout/custom_exo_layout_room" app:fastforward_increment="10000" app:hide_on_touch="true" app:resize_mode="fit" app:rewind_increment="10000" />
+                    <com.github.ybq.android.spinkit.SpinKitView android:id="@id/progressBar" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" android:alpha="0.6" style="@style/SpinKitView.DoubleBounce" />
+                </RelativeLayout>
+            </FrameLayout>
+            <RelativeLayout android:id="@id/chat_full_lyt" android:background="#ff121213" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.5">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/messages_full" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip" android:layout_toLeftOf="@id/emoji_rv" android:alpha="0.9" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/emoji_rv" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:alpha="0.8" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/chat_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/halfscreen"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/halfscreen">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/messages" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llbottom" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llbottom" android:background="#ff121213" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0" android:layout_alignParentBottom="true">
+            <androidx.cardview.widget.CardView android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:elevation="0.0dip" app:cardBackgroundColor="#da191c22" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip">
+                <LinearLayout android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <androidx.cardview.widget.CardView android:layout_gravity="center_vertical" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip">
+                        <ImageView android:id="@id/user_iv" android:layout_width="22.0dip" android:layout_height="22.0dip" android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+                    <com.rengwuxian.materialedittext.MaterialEditText android:theme="@style/input" android:textSize="13.699982dip" android:id="@id/message_input" android:paddingBottom="-7.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" android:singleLine="true" android:layout_weight="8.1" android:inputType="text" android:imeOptions="flagNoFullscreen" app:met_baseColor="#ff151820" app:met_errorColor="@color/nav_red" app:met_floatingLabel="none" app:met_primaryColor="#00151820" app:met_textColor="#ffabb6d5" app:met_textColorHint="#ff61687c" app:met_underlineColor="#00151820" style="@style/input" />
+                    <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:layout_width="50.0dip" android:layout_height="40.0dip">
+                        <ImageButton android:gravity="center" android:id="@id/send_button" android:background="@color/transparent" android:padding="7.0dip" android:layout_width="50.0dip" android:layout_height="40.0dip" android:src="@drawable/icon_send" android:scaleType="centerInside" android:alpha="0.7" />
+                        <com.github.ybq.android.spinkit.SpinKitView android:layout_gravity="center" android:id="@id/btn_loading" android:padding="7.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="@style/SpinKitView.DoubleBounce" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

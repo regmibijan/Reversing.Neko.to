@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shimmer="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/shimmer_view_container" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.github.ybq.android.spinkit.SpinKitView android:layout_gravity="center" android:padding="5.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:indeterminate="true" style="@style/SpinKitView.MultiplePulseRing" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+            <TextView android:textSize="15.0dip" android:textColor="@color/grey_40" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="Unable to connect? Let us know!" android:layout_below="@id/gif" android:layout_centerInParent="true" android:fontFamily="@font/lineto" android:letterSpacing="0.04" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/discord" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <Button android:background="@drawable/discord" android:layout_width="22.0dip" android:layout_height="22.0dip" android:foregroundTint="@color/nav_pink" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="DISCORD" android:fontFamily="@font/lineto" style="@style/TextAppearance.Medium.Bold" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/telegram" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                    <Button android:background="@drawable/icon_tele" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="TELEGRAM" android:fontFamily="@font/lineto" style="@style/TextAppearance.Medium.Bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/swipe_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/shimmer_view_container">
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/shimmer_view_container" android:alpha="0.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:gravity="center" android:id="@id/slider_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,1:2" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                        <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/user_settings" android:visibility="gone" android:clickable="false" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip">
+                            <androidx.cardview.widget.CardView android:layout_width="32.0dip" android:layout_height="32.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="10.0dip">
+                                <ImageView android:id="@id/user_pfp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                            </androidx.cardview.widget.CardView>
+                            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.08" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.viewpagerindicator.CirclePageIndicator android:id="@id/indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/qqq" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <View android:textColor="@color/grey_40" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,1.1:1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/qqq">
+                    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/notificationBtn" android:background="@drawable/chip_bg_green" android:paddingLeft="9.0dip" android:paddingTop="3.0dip" android:paddingRight="9.0dip" android:paddingBottom="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/notification_icon" android:padding="2.5dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_bell" android:scaleType="centerCrop" app:tint="#ff09ca60" />
+                                <TextView android:textSize="15.0sp" android:textColor="#ff09ca60" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Notifications" android:fontFamily="@font/lineto" android:letterSpacing="0.07" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/all_airing" android:background="@drawable/chip_bg_orange" android:paddingLeft="9.0dip" android:paddingTop="3.0dip" android:paddingRight="9.0dip" android:paddingBottom="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+                                <ImageView android:layout_gravity="center_vertical" android:padding="4.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_calender" android:scaleType="centerCrop" app:tint="#fffb8c00" />
+                                <TextView android:textSize="15.0sp" android:textColor="#fffb8c00" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Schedule" android:fontFamily="@font/lineto" android:letterSpacing="0.07" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/rooms" android:background="@drawable/chip_bg_teal" android:paddingLeft="9.0dip" android:paddingTop="3.0dip" android:paddingRight="9.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+                                <ImageView android:layout_gravity="center_vertical" android:padding="2.5dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/room_tab" android:scaleType="centerCrop" app:tint="#ff26c6da" />
+                                <TextView android:textSize="15.0sp" android:textColor="#ff26c6da" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Rooms" android:fontFamily="@font/lineto" android:letterSpacing="0.07" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/expand_last_missed" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="500" app:el_expanded="false">
+                        <LinearLayout android:orientation="vertical" android:id="@id/last_missed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="You" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                                <TextView android:textSize="14.0sp" android:textColor="#ff00bfa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Missed" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                            </LinearLayout>
+                            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/preloader_missed" android:layout_width="fill_parent" android:layout_height="185.0sp">
+                                <pl.droidsonroids.gif.GifImageView android:layout_width="80.0sp" android:layout_height="fill_parent" android:src="@drawable/preloader" android:layout_centerInParent="true" />
+                            </RelativeLayout>
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_lastmissed" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="true" android:paddingStart="2.0dip" android:nestedScrollingEnabled="false" />
+                        </LinearLayout>
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                    <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/up_today_lyt" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="500" app:el_expanded="false">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0sp" android:layout_marginRight="10.0dip">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Up For" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                                    <TextView android:textSize="14.0sp" android:textColor="#ff00bfa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Today" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/preloader_1" android:layout_width="fill_parent" android:layout_height="185.0sp">
+                                <pl.droidsonroids.gif.GifImageView android:layout_width="80.0sp" android:layout_height="fill_parent" android:src="@drawable/preloader" android:layout_centerInParent="true" />
+                            </RelativeLayout>
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/up_for_today" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="true" android:paddingStart="2.0dip" android:nestedScrollingEnabled="false" />
+                        </LinearLayout>
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/watchlist" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="#ff00bfa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Continue " android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Watching" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/preloader" android:layout_width="fill_parent" android:layout_height="185.0sp">
+                        <pl.droidsonroids.gif.GifImageView android:layout_width="80.0sp" android:layout_height="fill_parent" android:src="@drawable/preloader" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/watchlist_rv" android:visibility="gone" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="true" android:paddingStart="2.0dip" android:nestedScrollingEnabled="false" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                        <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/expand_recs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="500" app:el_expanded="false">
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,1.2:1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                                    <ImageView android:id="@id/recs_poster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <View android:background="@drawable/bg_home_recs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                                        <View android:background="#88101015" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                                        <View android:background="@drawable/bg_home_recs" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:scaleY="-1.0" />
+                                    </LinearLayout>
+                                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/mal_score_lyt" android:background="@drawable/chip_bg_white_half" android:paddingLeft="13.0dip" android:paddingTop="2.0dip" android:paddingRight="30.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/recs_rating">
+                                        <TextView android:textSize="28.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/recs_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7.8" android:fontFamily="@font/roobert_bold" />
+                                    </LinearLayout>
+                                    <TextView android:textSize="13.0dip" android:textColor="@color/white" android:id="@id/recs_rating" android:background="@drawable/chip_bg_white_half" android:paddingLeft="13.0dip" android:paddingTop="4.0dip" android:paddingRight="30.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="PG-17 Violance and Profanity" android:layout_above="@id/recs_title" android:fontFamily="@font/roobert_medium" android:letterSpacing="0.05" />
+                                    <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/recs_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="40.0dip" android:maxLines="2" android:layout_alignParentBottom="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.08" />
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip">
+                                        <TextView android:textSize="14.0sp" android:textColor="#ff00bfa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RECOMMENDED" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ANIME" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                                    </LinearLayout>
+                                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_above="@id/mal_score_lyt">
+                                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/chip_bg_white_hard" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:backgroundTint="#ff00bfa5">
+                                            <ImageView android:layout_gravity="center_vertical" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/youtube" android:scaleType="centerCrop" app:tint="#ff00bfa5" />
+                                        </LinearLayout>
+                                    </RelativeLayout>
+                                </RelativeLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Weekly" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff00bfa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Top" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/weekly_rv" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="true" android:paddingStart="2.0dip" android:nestedScrollingEnabled="false" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Recently" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff00bfa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Added" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerRecent" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:scrollingCache="true" android:paddingStart="2.0dip" android:nestedScrollingEnabled="false" />
+                    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/banner_lyt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="30.0dip">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0sp" app:layout_constraintDimensionRatio="H,16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                            <ImageView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" />
+                        </RelativeLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/expand_comments" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="1500" app:el_expanded="false">
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0dip">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginBottom="5.0dip">
+                                    <TextView android:textSize="14.0sp" android:textColor="#ff00bfa5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Comments" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Feed" android:textAllCaps="true" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.3" />
+                                </LinearLayout>
+                                <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerCommentsFeed" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:scrollingCache="true" android:paddingStart="2.0dip" android:nestedScrollingEnabled="false" />
+                                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/view_all_comments" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="26.0dip">
+                                    <TextView android:textSize="14.0sp" android:textColor="#ffbf5300" android:gravity="right" android:layout_gravity="center_vertical" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="View all" android:fontFamily="@font/roobert_bold" android:letterSpacing="0.2" />
+                                    <ImageView android:padding="1.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/youtube" app:tint="#ffbf5300" />
+                                </LinearLayout>
+                                <View android:layout_width="fill_parent" android:layout_height="80.0dip" />
+                            </LinearLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:elevation="0.0dip">
+                                <RelativeLayout android:id="@id/lyt_parent" android:layout_width="fill_parent" android:layout_height="0.0sp" app:layout_constraintDimensionRatio="H,2:1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_page_bg" android:adjustViewBounds="true" />
+                                    <View android:background="@drawable/bg_poster_details3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+                                </RelativeLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </RelativeLayout>
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>

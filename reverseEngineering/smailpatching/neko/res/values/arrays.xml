@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WheelArrayDefault">
+        <item>AigeStudio</item>
+        <item>Aige</item>
+        <item>爱哥</item>
+        <item>الحب  اخي</item>
+        <item>jeg elsker</item>
+        <item>사랑해요 형</item>
+        <item>Amor de irmão</item>
+        <item>armastan</item>
+        <item>愛の兄</item>
+        <item>обичам те</item>
+        <item>любовь - братa</item>
+        <item>miłość bracie</item>
+        <item>Liebe</item>
+        <item>Lamour</item>
+        <item>rakastan sinua</item>
+        <item>láska..</item>
+        <item>dragostea.</item>
+        <item>jag älskar</item>
+        <item>ljubezen, brat.</item>
+        <item>愛哥</item>
+        <item>ชอบพี่</item>
+        <item>αγάπη μου</item>
+        <item>a szerelem.</item>
+        <item>Amore, fratello.</item>
+    </string-array>
+    <string-array name="WheelArrayWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <array name="cast_expanded_controller_default_control_buttons">
+        <item>@id/cast_button_type_closed_caption</item>
+        <item>@id/cast_button_type_skip_previous</item>
+        <item>@id/cast_button_type_skip_next</item>
+        <item>@id/cast_button_type_mute_toggle</item>
+    </array>
+    <array name="cast_mini_controller_default_control_buttons">
+        <item>@id/cast_button_type_empty</item>
+        <item>@id/cast_button_type_empty</item>
+        <item>@id/cast_button_type_play_pause_toggle</item>
+    </array>
+    <string-array name="ccl_prefs_caption_color_names">
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Blue</item>
+        <item>Magenta</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_color_values">
+        <item>\#FFFFFF</item>
+        <item>\#000000</item>
+        <item>\#FF0000</item>
+        <item>\#FFFF00</item>
+        <item>\#00FF00</item>
+        <item>\#00FFFF</item>
+        <item>\#0000FF</item>
+        <item>\#FF00FF</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_edge_type_names">
+        <item>None</item>
+        <item>Outline</item>
+        <item>Drop Shadow</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_edge_type_values">
+        <item>EDGE_TYPE_NONE</item>
+        <item>EDGE_TYPE_OUTLINE</item>
+        <item>EDGE_TYPE_DROP_SHADOW</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_font_family_names">
+        <item>San-serif</item>
+        <item>Serif</item>
+        <item>Monospace</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_font_family_values">
+        <item>FONT_FAMILY_SANS_SERIF</item>
+        <item>FONT_FAMILY_SERIF</item>
+        <item>FONT_FAMILY_MONOSPACED_SANS_SERIF</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_font_scale_names">
+        <item>Very Small</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Very Large</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_font_scale_values">
+        <item>0.5</item>
+        <item>0.75</item>
+        <item>1.0</item>
+        <item>1.5</item>
+        <item>2.0</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_opacity_names">
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="ccl_prefs_caption_opacity_values">
+        <item>3F</item>
+        <item>80</item>
+        <item>BF</item>
+        <item>FF</item>
+    </string-array>
+    <string-array name="exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="quotes">
+        <item>"-The world isn't perfect. But it's there for us, doing the best it can..that's what makes it so damn beautiful. ~ Roy Mustang (Full Metal Alchemist)"</item>
+        <item>-Fear is not evil. It tells you what weakness is. And once you know your weakness, you can become stronger as well as kinder. ~Gildarts Clive (Fairy Tail)</item>
+        <item>"-To know sorrow is not terrifying. What is terrifying is to know you can't go back to happiness you could have. ~ Matsumoto Rangiku (Bleach)"</item>
+        <item>"-Whatever you lose, you'll find it again. But what you throw away you'll never get back. ~ Kenshin Himura (Rurouni Kenshin: Meiji Kenkaku Romantan)"</item>
+        <item>-People, who can’t throw something important away, can never hope to change anything. ~ Armin Arlert (Shingeki no Kyojin / Attack on Titan)</item>
+        <item>-I want you to be happy. I want you to laugh a lot. I don’t know what exactly I’ll be able to do for you, but I’ll always be by your side. ~ Kagome (InuYasha)</item>
+        <item>-Thinking you’re no-good and worthless is the worst thing you can do ~ Nobita (Doraemon)</item>
+        <item>-Don’t give up, there’s no shame in falling down! True shame is to not stand up again! ~ Shintaro Midorima (Kuroko No Basket)</item>
+        <item>-When a man learns to love, he must bear the risk of hatred. ~ Uchiha Madara</item>
+        <item>"-Just be yourself and you'll be fine ~ Natsuki Takaya, (Fruits Basket)"</item>
+        <item>-Lying tears hurt others. Lying smiles hurt oneself ~ Ichirou Ohkouchi</item>
+        <item>-Power isn’t determined by your size, But the size of your heart and dreams! ~ Monkey D. Luffy (One Piece)</item>
+        <item>-Dont let Nothing stop you. Fight for your goals even when it seems out of reach. ~ Ichigo Kurosaki (Bleach)</item>
+        <item>-Whatever happens, happens. ~ Keiko Nobumoto</item>
+        <item>-Spoiling stories… is an unforgivable sin in this world. ~ Leo Baskerville Pandora Hearts</item>
+        <item>-There are things that cannot be taken back. But the world will keep on spinning whether you laugh or you cry. ~ Hikigaya Hachiman</item>
+        <item>"-Once you question your own belief, it's over. ~ Naruto Uzumaki"</item>
+        <item>-In order to exist you need a purpose, to exist without a purpose is the same as being dead. ~ Gaara</item>
+        <item>-The true substance of love lies in the act of howling words of love with a desperation of a man jumping into the high seas. ~ Osamu Dazai, A New Hamlet</item>
+        <item>"-I'll go, then rub it in the faces of everyone who said I couldn't. ~ Atsuko Ishizuka (a place further than the universe)"</item>
+        <item>-Never think the stars you see are all the stars there are. ~ Atsuko Ishizuka (a place further than the universe)</item>
+        <item>-Whether you’re sad, you’re a mess, or you’ve hit rock bottom, you still have TO PLAY! That’s how people like us survive ~ Kaori Miyazono</item>
+        <item>-Talent is something you bloom, Instinct is something you polish. ~ Oikawa Tooru, Haikyūu</item>
+        <item>"-I don't care if no one like me, I wasn't created in this world to entertain everyone. ~ Oreki from Hyouka"</item>
+        <item>-People are born weak, but we have the freedom to defy our weaknesses and struggle to change ourselves ~ Yoshida Shouyou</item>
+        <item>-I dont exist. But even if I do thats still none of your business ~ Mei Misaki</item>
+        <item>"-If you don't want a sarcastic answer, don't ask a stupid question. ~ Oreki Houtarou"</item>
+        <item>"-Don't change so people will like you. Be yourself and the right people will like the real you. ~ Oreki Houtarou"</item>
+        <item>-There are only two paths you can choose. You can sit quietly and be selected out of this world, or you can adapt and change! ~ Gai Tsutsugami</item>
+        <item>-Once I’m dead, I won’t even be able to remember you. So I’ll win, no matter what. I’ll live, no matter what! ~ Mikasa Ackerman</item>
+        <item>-Appearances rarely share the whole truth ~ Selim Bradly Pride</item>
+        <item>"-You can spill drinks on me, even spit on me. I'll just laugh about it. But If you dare to hurt my friends.. I won't forgive you! ~ Shanks"</item>
+        <item>"-When the world shoves you around, you just gotta stand up and shove back. It's not like somebody's gonna save you if you start babbling excuses. ~ Roronoa Zoro"</item>
+        <item>"-I don't wanna live a thousand years. If I just live through today, that'll be enough. ~ Portgas D. Ace"</item>
+        <item>-In case we become candles, I want to have a nice pose ~ Roronoa Zoro</item>
+        <item>"-I'm sorry. I never pray to god. ~ Roronoa Zoro"</item>
+        <item>-Give a kid a smoke and he’ll be happy for a day. Teach him how to smoke… he’ll be happy for his whole shortened life. ~ Eikichi Onizuka</item>
+        <item>-Sometimes violence is the only way to get the message across. ~ Eikichi Onizuka</item>
+        <item>-A brat who is afraid to be hurt isn’t qualified to love someone. ~ Eikichi Onizuka</item>
+        <item>-There’s no gender distinction among the bad. ~ Eikichi Onizuka</item>
+        <item>-Some lies are necessary for giving children dreams. ~ Shimura Tae (Gintama)</item>
+        <item>-I suppose it’s not so bad that an old friend is the same as ever. ~ Kotarou Katsura (Gintama)</item>
+        <item>-Whether doing good or evil, I will be the boss. ~ Kagura (Gintama)</item>
+        <item>-No matter whether you win or not, there’s no meaning to war. ~ Gintoki Sakata (Gintama)</item>
+        <item>-You yourself have to change first, or nothing will change for you. ~ Gintoki Sakata (Gintama)</item>
+        <item>-Life is like a mountain – you can say you’ve reached the top, but only after climbing back down. ~ Gintoki Sakata (Gintama)</item>
+    </string-array>
+    <array name="username_colors">
+        <item>@color/username0</item>
+        <item>@color/username1</item>
+        <item>@color/username2</item>
+        <item>@color/username3</item>
+        <item>@color/username4</item>
+        <item>@color/username5</item>
+        <item>@color/username6</item>
+        <item>@color/username7</item>
+        <item>@color/username8</item>
+        <item>@color/username9</item>
+        <item>@color/username10</item>
+        <item>@color/username11</item>
+    </array>
+    <string-array name="wheel_hours">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="wheel_minuts">
+        <item>00</item>
+        <item>05</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+    </string-array>
+    <string-array name="wheel_time">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+</resources>

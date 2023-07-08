@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainView" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0dip">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:id="@id/spinerTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Select or Search Items" />
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/searchIcon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_search_black_36dp" />
+            <EditText android:id="@id/searchBox" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:inputType="text" />
+        </LinearLayout>
+        <View android:id="@id/viewLine" android:background="#ffd1d1d1" android:layout_width="wrap_content" android:layout_height="0.100000024dip" />
+        <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="300.0dip" android:divider="#ffd1d1d1" android:dividerHeight="0.100000024dip" />
+        <TextView android:layout_gravity="right" android:id="@id/close" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Close" />
+    </LinearLayout>
+</LinearLayout>

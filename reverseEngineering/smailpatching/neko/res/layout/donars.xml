@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/color_bg_news" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:shimmer="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/swipe_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="26.0dip" android:textColor="@color/white" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:text="NEKO" android:fontFamily="@font/got" android:letterSpacing="0.1" />
+                            <ImageView android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginTop="90.0dip" android:src="@drawable/neko_font" />
+                            <TextView android:textSize="13.0dip" android:textColor="@color/grey_40" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="Neko is non-profit and ad free project. These people listed below help us stand up and are the main reason we all are watching anime on this app." android:lineSpacingExtra="4.0dip" android:fontFamily="@font/roobert_light" android:letterSpacing="0.07" />
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/chip_bg_teal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_weight="0.54">
+                                    <TextView android:textSize="13.0dip" android:textColor="@color/grey_20" android:id="@id/progress_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App Cost for Decemeber" android:fontFamily="@font/roobert_light" android:letterSpacing="0.06" />
+                                    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff08bfbf" android:id="@id/progres_amnt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="$ 450" android:fontFamily="@font/causten" android:letterSpacing="0.05" />
+                                    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff08bfbf" android:gravity="center" android:layout_gravity="center" android:id="@id/donate" android:background="@drawable/chip_bg_teal" android:paddingLeft="15.0dip" android:paddingTop="4.0dip" android:paddingRight="15.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Donate" android:fontFamily="@font/causten" android:letterSpacing="0.07" />
+                                </LinearLayout>
+                                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+                                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0sp" app:layout_constraintDimensionRatio="H,1:1" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                                            <com.timqi.sectorprogressview.ColorfulRingProgressView android:id="@id/progress_circle" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" app:bgColor="#d5282c30" app:fgColorEnd="#ff066a36" app:fgColorStart="#ff03a1df" app:percent="100.0" app:startAngle="0.0" app:strokeWidth="10.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                                            <TextView android:textSize="15.0sp" android:textColor="#ff08bfbf" android:id="@id/progress_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="888" android:maxLines="1" android:singleLine="true" android:layout_centerInParent="true" android:fontFamily="@font/clarikal" />
+                                        </RelativeLayout>
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff08bfbf" android:gravity="center" android:id="@id/close" android:background="@drawable/chip_bg_teal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="Continue to app" android:fontFamily="@font/causten" android:letterSpacing="0.08" />
+                            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/grey_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="Top donors" android:fontFamily="@font/lineto" android:letterSpacing="0.05" />
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/all_time_king" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="true" android:nestedScrollingEnabled="false" />
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/all_time_most" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="true" android:nestedScrollingEnabled="false" />
+                            <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/expand_monthly" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="500" app:el_expanded="false">
+                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/grey_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="Monthly Active donors" android:fontFamily="@font/lineto" android:letterSpacing="0.05" />
+                                    <androidx.recyclerview.widget.RecyclerView android:id="@id/top_monthly_donations" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip" android:scrollingCache="true" android:nestedScrollingEnabled="false" />
+                                </LinearLayout>
+                            </net.cachapa.expandablelayout.ExpandableLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="20.0sp" android:textColor="@color/srBlue" android:gravity="center" android:id="@id/telegram" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="30.0dip" android:text="Clicking here might HELP" style="@style/TextAppearance.Medium.Bold" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xxlarge" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                    <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textStyle="bold" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:text="@string/no_item_found" />
+                    <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:textColor="@color/grey_60" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_medium" android:textAlignment="center" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/shimmer_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="1.0dip">
+        <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.github.ybq.android.spinkit.SpinKitView android:layout_gravity="center" android:padding="5.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="@style/SpinKitView.MultiplePulseRing" />
+    </RelativeLayout>
+</RelativeLayout>
